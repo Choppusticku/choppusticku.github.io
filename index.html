@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome | Choppu</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="style.css">
+		<link rel = "icon" href =  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUXLH90QAaWzieHLTW9BxxNvSKIEhAzRzJ1g&usqp=CAU" type = "image/x-icon"> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			
+				<h1><span><i class="fa fa-trophy" aria-hidden="true"></i><abbr title="not a logo" style="text-decoration:none;">Choppu</abbr></span></h1>
+					<ul class="nav_links">
+						<li><a href="index.html" >Home</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="showcase.html">Showcase</a></li><li><a href="about.html">About</a></li><li class="nav-seperator">|</li>
+					</ul>
+		</header>
+		
+		<main>
+		<a id="button"></a>
+		<div class="container">
+		
+		<div class="slider"></div>
+		<section>
+		<div class="content">
+			<h1>Welcome to <span></span></h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing eliulla sit, ismod rutrumisus.</p>
+					<div class="button">
+						<a href="#footer" class="read-more">Read More</a>
+						<a href="#" class="dummy">Dummy</a>
+					</div>
+		</section>
+				<section class="section2">
+					<div class="section-container">
+						<div data-aos="fade-right" class="pengiuns">
+							<h1><span>TITLE HERE</span></h1><br><br>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat mollis facilisis. Morbi vel quam dolor. Nu</p>
+						</div>
+						<div data-aos="fade-left" class="penguin-picture">
+							<img src="image/pengu.jpg" class="img-pengu">
+							
+						</div>
+					</div>	
+	
+				</section>
+				
+	
+		</div>
+		</div>
+		</main>
+		<footer id="footer">
+			<div class="container">
+				<div class="ftr">
+					<h1><span><i class="fa fa-trophy" aria-hidden="true"></i> Choppu</span></h1>
+				</div>
+				<div class="ftr margin-bot">
+				<h3>TITLE HERE</h3><hr><br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu tortor ante. Lorem ipsum dolor sit amet, </p>
+				<br><a class="social-icon" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a class="social-icon" href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				<span style="font-size:0.8em">//SOCIAL MEDIA</span>
+				</div>
+					
+				<div class="ftr">
+				<h3>Nav</h3><hr><br>
+				<ul>
+					<li><a href="tesAbc.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="showcase.html">Showcase</a></li>
+					<li><a href="about.html">About</a></li>
+				
+					
+				</ul>
+				</div>
+				
+				<div class="ftr">
+					<h3>Contact</h3><hr><br>
+					<form action="#">
+						Email<br>
+						<input type="email" placeholder="Dummy" required style="width: 300px;"><br>
+						Message<br>
+						<textarea style="height: 200px; width: 300px"placeholder="This shit doesnt work" required></textarea>
+						<div class="btn">
+						<input class="submit-btn"type="submit" value="fuck off">
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		</footer>
+		<script>
+			window.addEventListener('scroll',function(){
+				var header = document.querySelector("header");
+				header.classList.toggle('sticky',window.scrollY > 0)
+			})
+		</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="aos.js"></script>
+		  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script>var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+</script>
+	</body>
+</html>

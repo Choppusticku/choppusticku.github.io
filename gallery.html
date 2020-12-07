@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gallery | Choppu</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="gallery.css">
+		<link rel = "icon" href =  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUXLH90QAaWzieHLTW9BxxNvSKIEhAzRzJ1g&usqp=CAU" type = "image/x-icon"> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<header>
+			
+				<h1><span><i class="fa fa-trophy" aria-hidden="true"></i>Choppu</span></h1>
+					<ul class="nav_links">
+						<li><a href="index.html" >Home</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="showcase.html">Showcase</a></li><li><a href="about.html">About</a></li><li class="nav-seperator">|</li>
+					</ul>
+		</header>
+		<main>
+			<div class="container">
+			
+			<div class="container2"><p class="border-bottom">CLICK ANY IMAGES<p></div><br>
+			<img class="myImages" id="myImg" src="image/racoon.jpg" alt="A Racoon" style="width:100%;max-width:300px">
+			<img class="myImages" id="myImg" src="image/hamster.jpg" alt="A Hamster" style="width:100%;max-width:300px">
+			<img class="myImages"id="myImg" src="image/hedgehog.jpg" alt="A Hedgehog" style="width:100%;max-width:300px">
+			<img class="myImages" id="myImg" src="image/artic_fox.jpg" alt="An Artic Fox" style="width:500%;max-width:300px">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+			</div>
+			
+			</div>
+		</main>
+		
+		<script>
+			window.addEventListener('scroll',function(){
+				var header = document.querySelector("header");
+				header.classList.toggle('sticky',window.scrollY > 0)
+			})
+		</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="aos.js"></script>
+		  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+	</body>
+</html>

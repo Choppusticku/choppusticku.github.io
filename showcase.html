@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Showcase | Choppu</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="showcase.css">
+		<link rel = "icon" href =  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUXLH90QAaWzieHLTW9BxxNvSKIEhAzRzJ1g&usqp=CAU" type = "image/x-icon"> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<header>
+			
+				<h1><span><i class="fa fa-trophy" aria-hidden="true"></i>Choppu</span></h1>
+					<ul class="nav_links">
+						<li><a href="index.html" >Home</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="showcase.html">Showcase</a></li><li><a href="about.html">About</a></li><li class="nav-seperator">|</li>
+					</ul>
+		</header>
+		<main>
+		<div class="container">
+			<div class="channel-container">
+				<a class="a" href="https://www.youtube.com/channel/UCbmVHfqjQxgU6Y9wxwc53Sg" target="_blank"><img src="image/circle-cropped.png"></a><span>></span></span>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/6L_U8pa3Brc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+		</div>
+
+		</main>
+		
+		<script>
+			window.addEventListener('scroll',function(){
+				var header = document.querySelector("header");
+				header.classList.toggle('sticky',window.scrollY > 0)
+			})
+		</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script src="aos.js"></script>
+		  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+	</body>
+</html>
